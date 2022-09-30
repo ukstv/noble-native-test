@@ -25,10 +25,16 @@ Safari 16.0 (17614.1.25.9.10, 17614):
 # Measuring on your own
 
 ```sh
-pnpm install && pnpm run start
+pnpm install && pnpm run start:browser
 ```
 
 Then open `http://localhost:3000` in browser and see benchmark results in the browser console.
+
+To run same (`crypto.subtle` repalced with native Node.js `crypto` module) benchmark on Node.js:
+
+```sh
+pnpm install && pnpm run start:browser
+```
 
 ## Credits
 

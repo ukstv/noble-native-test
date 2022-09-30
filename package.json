@@ -10,7 +10,8 @@
     "clean": "rm dist/bundle.js",
     "build-dev": "webpack --mode development",
     "build-prod": "webpack --mode production",
-    "start": "pnpm run build-dev && ./node_modules/.bin/serve ./dist"
+    "start:browser": "pnpm run build-dev && ./node_modules/.bin/serve ./dist",
+    "start:node": "./node_modules/.bin/tsm ./node.ts"
   },
   "dependencies": {
     "@noble/hashes": "^1.1.2",
