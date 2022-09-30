@@ -33,7 +33,7 @@ Then open `http://localhost:3000` in browser and see benchmark results in the br
 To run same (`crypto.subtle` repalced with native Node.js `crypto` module) benchmark on Node.js:
 
 ```sh
-pnpm install && pnpm run start:browser
+pnpm install && pnpm run start:node
 ```
 
 ## Credits
