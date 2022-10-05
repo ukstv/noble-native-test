@@ -29,7 +29,7 @@ export function measureSync(
 
 export async function measureAsync(
   name: string,
-  fn: (bytes: Uint8Array) => Promise<Uint8Array>
+  fn: (bytes: Uint8Array) => Promise<Uint8Array> | Uint8Array
 ) {
   const times: Array<number> = [];
   const digests: Array<Uint8Array> = [];

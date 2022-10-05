@@ -13,6 +13,12 @@ async function main() {
   measureSync("stable.sha256", (bytes) => {
     return stableSHA256(bytes);
   });
+  await measureAsync("noble.sha256:async", (bytes) => {
+    return nobleSHA256(bytes);
+  });
+  await measureAsync("stable.sha256:async", (bytes) => {
+    return stableSHA256(bytes);
+  });
   await measureAsync("crypto.subtle.sha256", (bytes) => {
     return crypto.subtle
       .digest("SHA-256", bytes)
@@ -25,6 +31,12 @@ async function main() {
     return nobleSHA512(bytes);
   });
   measureSync("stable.sha512", (bytes) => {
+    return stableSHA512(bytes);
+  });
+  await measureAsync("noble.sha512:async", (bytes) => {
+    return nobleSHA512(bytes);
+  });
+  await measureAsync("stable.sha512:async", (bytes) => {
     return stableSHA512(bytes);
   });
   await measureAsync("crypto.subtle.sha512", (bytes) => {
