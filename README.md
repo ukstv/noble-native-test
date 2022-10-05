@@ -22,6 +22,10 @@ Safari 16.0 (17614.1.25.9.10, 17614):
 
 ![Safari](./assets/safari.png "Safari results")
 
+UPD: What if use `await` for calling `noble` and `stable` libs:
+
+![Chrome](./assets/chrome-async.png "Chrome results")
+
 # Measuring on your own
 
 ```sh
